@@ -19,11 +19,8 @@ Ky projekt kërkon **Python 3.9 ose më i lartë**.
 Verifiko versionin me:
 ```powershell
 python --version
-
-## Setup Hap Pas Hapi
-
-### 1. Klono repo dhe futu në root
-```powershell
+Setup Hap Pas Hapi
+1. Klono repo dhe futu në root
 git clone <repo-url>
 cd data-pipeline-final
 2. Krijo dhe aktivizo virtual environment
@@ -36,24 +33,22 @@ pip install -r requirements.txt
 Në root të projektit:
 
 SECRET_KEY=polis2026!
-Run i Pipeline
+5. Run i Pipeline
 Nga root i projektit:
 
 python app\main.py
-Pas ekzekutimit, data/encrypted_data.json do të jetë krijuar automatikisht.
+Pas ekzekutimit, folder-i data/ do të krijohet automatikisht dhe do të përmbajë encrypted_data.json.
 
-Test i Pipeline
+6. Test i Pipeline
 Për status hap pas hapi:
 
 python app\test_pipeline.py
-Shfaq scraping, API, transform, encryption dhe storage
+Ky skript tregon scraping, API enrichment, transform, encryption dhe storage.
 
 Enkriptimi
-Përdor Fernet symmetric encryption (cryptography)
-
-Çelësi gjendet në .env si SECRET_KEY
-
-Të dhënat e ruajtura janë plotësisht të enkriptuara
+Përdor Fernet symmetric encryption (cryptography).
+Çelësi gjendet në .env si SECRET_KEY.
+Të dhënat e ruajtura janë plotësisht të enkriptuara.
 
 Libraritë kryesore
 requests – për scraping dhe API
@@ -65,6 +60,6 @@ cryptography – enkriptimi
 python-dotenv – menaxhim i çelësave nga .env
 
 Riprodhueshmëria
-Fshi data/ dhe run përsëri main.py
+Fshi data/ dhe run përsëri main.py.
 
-Pipeline krijon automatikisht folderin dhe file-in
+Pipeline krijon automatikisht folderin dhe file-in.
