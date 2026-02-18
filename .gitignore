@@ -1,0 +1,10 @@
+# Virtual environment
+virtual26/
+
+# Data enkriptuar
+data/
+
+# Secrets
+.env
+__pycache__/
+*.pyc
