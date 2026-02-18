@@ -2,6 +2,8 @@ import requests
 
 API_URL = "https://api.agify.io"
 
+# Funksion që merr moshën e autorëve nga API
+
 def enrich_with_age(name):
     """
     Merr moshë të përafërt nga API.
