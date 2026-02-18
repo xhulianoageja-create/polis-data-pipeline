@@ -1,5 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
+"""
+Modul për nxjerrjen e citateve nga faqja http://quotes.toscrape.com
+"""
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0"
